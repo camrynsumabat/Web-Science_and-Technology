@@ -1,0 +1,130 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Raleway:wght@600&display=swap');
+
+body {
+    background-color: #7C6F69;
+    margin: 0;
+}
+
+header {
+    font-family: 'Raleway'; /* Requirement 1.1 - Fonts */
+    color: #E6E6E8; /* Requirement 1.3 - Color */
+}
+
+header ul { /* Requirement 1.15 - Contextual Selector */
+    position: fixed; /* Requirement 1.20 - Position */
+    width: 100%; /* Requirement 1.9 - Relative Units AND Requirement 1.6 - Sizing */
+    list-style-type: none; /* Requirement 1.7 - Lists */
+    margin: 0;
+    padding: 0; /* Requirement 1.5 - Spacing */
+    overflow: hidden; /* Requirement 1.19 - Overflow */
+    background-color: #333335; /* Requirement 1.3 - Background */
+    z-index: 1; /* Requirement 1.22 - Z-index */
+}
+
+header li {
+    float: left; /* Requirement 1.16 - Float */
+}
+
+header li.logo a { /* Requirement 1.12 - Class Selector */
+    font-size: 48px;
+    font-weight: 300;
+    text-decoration: none; /* Requirement 1.2 - Text */
+    padding: 14px 16px 0px 16px;
+    color: #E6E6E8;
+}
+
+header li.nav-item {
+    float: right;
+}
+
+header li.nav-item a {
+    display: block; /* Requirement 1.17 - Display */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #E6E6E8;
+}
+
+header li.nav-item a:hover { /* Requirement 1.14 - Pseudo Selector */
+    text-decoration: underline;
+    background-color: #E6E6E8;
+    color: #333335;
+    transition: .3s;
+}
+
+section#welcome { /* Requirement 1.13 - ID Selector */
+    background-color: #7C6F69;
+    height: 700px; /* Requirement 1.8 - Absolute Units */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#welcome h1 {
+    font-size: 48px;
+    text-align: right;
+    color: #E6E6E8;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+section#welcome h2 {
+    font-size: 36px;
+    text-align: left;
+    color: #E6E6E8;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+section.home-body div {
+    display: flex;
+    align-content: center;
+    padding: 80px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    margin: 100px;
+    background-color: #E6E6E8;
+}
+
+section.home-body figure , section.home-body p { /* Requirement 1.11 - Grouped Element Selector*/
+    float:left;
+}
+
+.home-body img.hidden {
+    clear:both;
+    visibility: hidden; /* Requirement 1.21 - Visibility */
+}
+
+section.home-body hr.clear {
+    clear: both; /* Requirement 1.18 - Clear */
+}
+
+footer {
+    background-color: #333335;
+    color: #E6E6E8;
+}
+footer section {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+footer section a {
+    border: solid;
+    border-color: #E6E6E8; /* Requirement 1.4 - Borders*/
+    border-width: 3px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #E6E6E8;
+    font-family: 'Raleway';
+}
+footer section a:hover {
+    transition: .3s;
+    color: #7C6F69;
+    background-color: #E6E6E8;
+
+}
